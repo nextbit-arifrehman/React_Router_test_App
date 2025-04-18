@@ -1,15 +1,24 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router';
-import "./Header.css"
+import { NavLink } from 'react-router';
+import './Header.css';
+
 const Header = () => {
     return (
-        <nav className='flex' >
-            <h2>hello vai i;m here</h2>
-               <NavLink to="/Mobile">Mobile</NavLink>
-               <NavLink to="/"> Home</NavLink>
-               <NavLink to="/Laptop">Laptop</NavLink>
-               <NavLink to='/users'>Users</NavLink>
-        </nav>
+        <div className="">
+            <header className="">
+                <h2>hello vai i'm here</h2>
+            </header>
+            <nav className="sidebar">
+                <NavLink to="/Mobile">Mobile</NavLink>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/Laptop">Laptop</NavLink>
+                <NavLink to="/users">Users</NavLink>
+                {/* alt +shift downarrow for cop */}
+                <NavLink to="/users2">Users2</NavLink>
+                <NavLink to="/posts">Posts</NavLink>
+
+            </nav>
+        </div>
     );
 };
 
